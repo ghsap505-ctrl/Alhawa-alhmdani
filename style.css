@@ -1,0 +1,51 @@
+/* التنسيقات العامة للجسم */
+body {
+    background-color: #f0f0f0;
+    background-image: url('HTML.jpg'); /* مثال على استخدام خلفية صورة */
+    background-position: center top;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* تنسيق العناوين */
+h1, h2, h3 {
+    color: #0056b3;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* تنسيق الفقرات */
+p {
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+/* تنسيق الروابط */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: overline;
+}
+
+a:active {
+    color: orange;
+    text-decoration: overline;
+}
+
+/* تنسيق القوائم */
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+}
