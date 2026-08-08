@@ -1,86 +1,100 @@
 /* التنسيقات العامة للجسم */
 body {
-    background-color: #f0f0f0;
-    background-image: url('bg_programming.jpg'); /* الصورة الجديدة المولدة */
+    background-color: #f8f9fa;
+    background-image: url('python.jpg'); /* الصورة التي تم توليدها سابقاً */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff; /* تغيير اللون للأبيض ليتناسب مع الخلفية الداكنة */
-}
-
-/* جعل القائمة أفقية باستخدام خاصية display */
-nav ol li, ul li {
-    display: inline-block; /* جعل العناصر بجانب بعضها */
-    margin-right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-/* تنسيق الروابط داخل القائمة */
-nav ol li a, ul li a {
-    color: #00d4ff;
-    text-decoration: none;
-}
-
-/* تنسيق الجدول بخصائص الحدود والإطار */
-.data-table {
-    border-width: 5px;
-    border-color: #ffcc00;
-    border-style: solid;
-    border-top-style: dashed;    /* Border-top-style */
-    border-right-style: double;  /* Border-right-style */
-    border-bottom-style: dotted; /* Border-bottom-style */
-    
-    height: 200px;               /* height */
-    margin: 30px auto;           /* margin */
-    padding: 15px;               /* padding */
-    
-    /* خصائص الإطار الخارجي (Outline) */
-    outline-color: #ffffff;      /* outline-color */
-    outline-style: groove;       /* outline-style */
-    outline-width: 3px;          /* outline-width */
-    
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 80%;
-}
-
-.data-table td, .data-table th {
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;      /* Vertical-align */
-}
-
-/* تطبيق خصائص الهوامش على النصوص */
-.text-box {
-    margin-top: 20px;            /* margin-top */
-    margin-right: 50px;          /* margin-right */
-    margin-bottom: 40px;         /* margin-bottom */
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-}
-
-/* خاصية الظهور (Visibility) */
-.hidden-text {
-    visibility: hidden;          /* مخفي ولكنه يحجز مساحة */
-}
-
-/* خاصية العرض (Display) */
-.block-text {
-    display: block;              /* عرض ككتلة */
-    border: 1px solid cyan;
-    padding: 5px;
-}
-
-.inline-text {
-    display: inline;             /* عرض على نفس السطر */
-    background-color: darkblue;
-    padding: 2px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
 /* تنسيق العناوين */
-h1, h2, h3 {
-    text-shadow: 2px 2px 4px #000000;
+h1, h2, h3, h4, h5 {
+    color: #0056b3;
     text-transform: capitalize;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* تنسيق الفقرات */
+p {
+    text-indent: 40px;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الروابط */
+a:link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc3545;
+    text-decoration: overline;
+}
+
+a:active {
+    color: #ffc107;
+    text-decoration: overline;
+}
+
+/* جعل القائمة أفقية */
+nav ol li, ul li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dee2e6;
+}
+
+/* تطبيق خصائص الحدود والإطار على أقسام الصفحة (بما أنه لا يوجد جدول أصلاً) */
+nav, dl, pre {
+    border-width: 2px;
+    border-color: #0056b3;
+    border-style: solid;
+    border-top-style: dashed;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    
+    outline-color: #ffcc00;
+    outline-style: groove;
+    outline-width: 3px;
+    
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* تطبيق خصائص إضافية */
+pre {
+    height: auto;
+    vertical-align: middle;
+    visibility: visible;
+}
+
+/* تنسيق القوائم */
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* تنسيق الصور والوسائط */
+img, video, iframe {
+    border: 3px solid #0056b3;
+    margin: 10px;
+    display: block;
 }
