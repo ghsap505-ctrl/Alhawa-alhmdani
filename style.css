@@ -1,100 +1,100 @@
-/* التنسيقات العامة للجسم */
+/* التنسيقات العامة مع صورة الخلفية python.jpg */
 body {
-    background-color: #f8f9fa;
-    background-image: url('python.jpg'); /* الصورة التي تم توليدها سابقاً */
+    background-color: #f0f4f8;
+    background-image: url('python.jpg'); /* اسم الصورة كما طلب المستخدم */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333333;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* لون فاتح ليتناسب مع الخلفية الداكنة */
+}
+
+/* جعل القائمة أفقية تماماً */
+nav ol, ul {
     padding: 0;
+    list-style-type: none;
 }
 
-/* تنسيق العناوين */
-h1, h2, h3, h4, h5 {
-    color: #0056b3;
-    text-transform: capitalize;
-    font-style: italic;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* تنسيق الفقرات */
-p {
-    text-indent: 40px;
-    font-size: 18px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-/* تنسيق الروابط */
-a:link {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #6c757d;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #dc3545;
-    text-decoration: overline;
-}
-
-a:active {
-    color: #ffc107;
-    text-decoration: overline;
-}
-
-/* جعل القائمة أفقية */
 nav ol li, ul li {
-    display: inline-block;
-    margin-right: 15px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #dee2e6;
+    display: inline-block; /* جعل العناصر أفقية */
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-/* تطبيق خصائص الحدود والإطار على أقسام الصفحة (بما أنه لا يوجد جدول أصلاً) */
-nav, dl, pre {
-    border-width: 2px;
-    border-color: #0056b3;
-    border-style: solid;
-    border-top-style: dashed;
-    border-right-style: double;
-    border-bottom-style: dotted;
+nav ol li a, ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+/* تنسيق الروابط عند التفاعل */
+a:hover {
+    color: #ffcc00;
+    text-decoration: overline;
+}
+
+/* تنسيق الجدول بخصائص الحدود المتقدمة */
+.styled-table {
+    border-width: 6px;              /* border-width */
+    border-color: #00d4ff;          /* color */
+    border-style: solid;            /* style */
+    border-top-style: dashed;       /* Border-top-style */
+    border-right-style: double;     /* Border-right-style */
+    border-bottom-style: dotted;    /* Border-bottom-style */
     
-    outline-color: #ffcc00;
-    outline-style: groove;
-    outline-width: 3px;
+    height: 300px;                  /* height */
+    margin: 40px auto;              /* margin */
+    padding: 20px;                  /* padding */
     
-    margin: 20px;
+    /* خصائص الإطار الخارجي */
+    outline-color: #ffcc00;         /* outline-color */
+    outline-style: groove;          /* outline-style */
+    outline-width: 4px;             /* outline-width */
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 85%;
+    color: white;
+}
+
+.styled-table td, .styled-table th {
+    border: 1px solid white;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    vertical-align: middle;         /* Vertical-align */
 }
 
-/* تطبيق خصائص إضافية */
-pre {
-    height: auto;
-    vertical-align: middle;
-    visibility: visible;
+/* تنسيق النصوص المنظمة */
+.text-block-1, .text-block-2, .text-block-3 {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-left: 5px solid #00d4ff;
 }
 
-/* تنسيق القوائم */
-ol {
-    list-style-type: upper-roman;
+.text-block-1 {
+    margin-top: 30px;               /* margin-top */
+    margin-right: 50px;             /* margin-right */
+    margin-bottom: 20px;            /* margin-bottom */
 }
 
-ul {
-    list-style-type: square;
+/* خصائص العرض والظهور */
+.hidden-element {
+    visibility: hidden;             /* visibility */
 }
 
-/* تنسيق الصور والوسائط */
-img, video, iframe {
-    border: 3px solid #0056b3;
-    margin: 10px;
-    display: block;
+.block-element {
+    display: block;                 /* display */
+    background-color: #333;
+    padding: 10px;
+}
+
+.inline-element {
+    display: inline;                /* display */
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* الحفاظ على مظهر العناوين الإنجليزية */
+h1, h2, h3 {
+    text-shadow: 2px 2px 5px #000;
 }
