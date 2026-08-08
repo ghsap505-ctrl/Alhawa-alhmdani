@@ -1,163 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
-    <title>Musa Sadiq</title>
-    <!-- طريقة الـ link (External CSS) -->
+    <title>مشروع البرمجة - موسى صادق</title>
+    <!-- ربط ملف CSS الخارجي -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- طريقة الـ internal/in-line (اختياري: يمكن وضعها هنا بدلاً من الرابط) -->
-    <style>
-        /* يمكنك وضع التنسيقات هنا مباشرة إذا أردت استخدام الطريقة الداخلية */
-    </style>
 </head>
 
+<body>
+    <marquee><h1>مرحباً بكم في مشروع الوسائط المتعددة التعليمي</h1></marquee>
 
-<body bgcolor=white>
-    <font ><marquee><h1>Welcome to our Multi-Media Project</h1></marquee> </font>
-    <font color="black">
-        <h1>Welcome to our Multi-Media Project</h1>
-        <hr>
-        <h1>learn simply</h1>
-        <p>This website is a comprehensive educational platform designed to help beginners learn programming languages
-            in a simple and practical way. We provide structured lessons, real-world examples, and hands-on exercises
-            that make coding accessible to everyone. Whether you are a student, a professional looking to switch careers,
-            or simply curious about technology, our content is tailored to guide you step by step through the
-            fundamentals of software development and web design.
-        </p>
-        <hr>
-        <nav>
-            <ol>
-                <li><a href="#c++"><big>C++</big></a></li>
+    <nav>
+        <ol>
+            <li><a href="#c++">C++</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#java">JAVA</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#table-section">جدول البيانات</a></li>
+            <li><a href="mailto:ghsap505@gmail.com">اتصل بنا</a></li>
+        </ol>
+    </nav>
 
-                <li><a href="#python"><small>Python</small></a></li>
+    <hr>
 
-                <li><a href="#java">JAVA</a></li>
+    <div class="text-box">
+        <h2>حول المنصة</h2>
+        <p>هذه المنصة تهدف لتبسيط البرمجة للمبتدئين. استخدمنا هنا خصائص <b>margin-top</b> و <b>margin-bottom</b> لتنظيم المساحات.</p>
+    </div>
 
-                <li><a href="#html">HTML</a><!--للانتقال الى جزى معين في الصفحة--></li>
+    <section id="table-section">
+        <h2>جدول بيانات اللغات البرمجية</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>اللغة</th>
+                    <th>سنة الظهور</th>
+                    <th>الاستخدام الرئيسي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C++</td>
+                    <td>1985</td>
+                    <td>الألعاب والأنظمة</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>1991</td>
+                    <td>الذكاء الاصطناعي</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>1995</td>
+                    <td>تطبيقات الأندرويد</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>لاحظ الجدول أعلاه: تم تطبيق <b>border-top-style (dashed)</b> و <b>border-right-style (double)</b> و <b>outline</b> عليه.</p>
+    </section>
 
-                <li><a href="Musa.html">who are we</a><!--للأنتقال الى موقع خرجي ولكن في نفس ملف المشروع-->
-                </li>
-                <li><a href="mailto:ghsap505@gmail.com">Contact us</a></li>
-                <li> <a href="signin.html">sign in</a></li>
-            </ol>
-        </nav>
-        <h2 id="c++">C++</h2>
+    <hr>
+
+    <div class="text-box">
+        <h3>توضيح خصائص CSS الإضافية</h3>
+        
+        <p>هذا النص يوضح خاصية <b>Vertical-align</b> حيث أن الأيقونات أو النصوص الصغيرة <span style="vertical-align: super; font-size: 10px;">(مثل هذا)</span> تكون محاذية للأعلى.</p>
+        
+        <div class="block-text">
+            هذا النص يستخدم <b>display: block</b>، لذا فهو يأخذ عرض السطر كاملاً.
+        </div>
+        
         <p>
-            <font face="Great Vibes" color="white" size="2">
-                C++ is a powerful general-purpose programming language that supports object-oriented, procedural, and
-                generic programming. <b>10<sup>2</sup></b> It is widely used in system software, game development,
-                embedded systems, and high-performance applications. Learning C++ gives you a deep understanding of
-                how computers work at a low level, including memory management and hardware interaction. Many modern
-                languages are built upon concepts that originated in C++, making it an excellent foundation for any
-                aspiring programmer.
-            </font>
+            بينما هذا النص يحتوي على جزء يستخدم <span class="inline-text">display: inline</span> وهو يظهر ضمن السطر.
         </p>
 
-        <h3 id="python"><i>Python</i></h3>
-        <p>
-            <b>Python</b> is one of the most popular <b>Fe<sub>2</sub></b> programming languages in the world today.
-            It is known for its clean syntax and readability, making it an ideal choice for beginners. Python is used
-            extensively in web development, data science, artificial intelligence, machine learning, and automation.
-            Its vast ecosystem of libraries and frameworks allows developers to build complex applications quickly
-            and efficiently. From simple scripts to large-scale enterprise solutions, Python remains a versatile
-            and powerful tool for developers worldwide.
-        </p>
+        <p class="hidden-text">هذا النص موجود ولكنه مخفي باستخدام <b>visibility: hidden</b> (سيترك فراغاً هنا).</p>
+        
+        <p>تم جعل القائمة في الأعلى <b>أفقية</b> باستخدام <b>display: inline-block</b> لكل عنصر فيها.</p>
+    </div>
 
-        <h4 id="java">JAVA</h4>
-        <p>
-            Java is a robust, platform-independent programming language that follows the principle of write once,
-            run anywhere. It is one of the most widely used languages for building enterprise-level applications,
-            Android mobile apps, and large-scale distributed systems. Java provides strong memory management,
-            multithreading capabilities, and a rich standard library. Its object-oriented nature makes it ideal
-            for building modular and maintainable software solutions that can scale to meet growing demands.
-        </p>
+    <section id="c++">
+        <h2>C++</h2>
+        <p>لغة قوية تدعم البرمجة الكائنية والإجرائية.</p>
+    </section>
 
-        <dl>
-            <h5 id="html">
-                <dt>HTML :</dt>
-            </h5>
-            <p>
-                <dd> HTML stands for HyperText Markup Language and is the standard language used to create and
-                    structure content on the web. It defines the layout of web pages using elements such as headings,
-                    paragraphs, links, images, and multimedia. HTML works alongside CSS for styling and JavaScript
-                    for interactivity to create modern, responsive websites. Understanding HTML is the first essential
-                    step for anyone who wants to pursue web development or design as a career.
-                </dd>
-            </p>
-        </dl>
-        <p>
+    <section id="python">
+        <h2>Python</h2>
+        <p>تتميز بسهولة القراءة وتستخدم بكثرة في علوم البيانات.</p>
+    </section>
 
-            <s>
-                <pre><font color="Bkack" size="5" >50$</font></pre>
-            </s> 20$
-
-        </p>
-
-        <!--Image-->
-        <h3>Images</h3>
-        <a href="Musa.html" target="_blank"> <img src="HTML.jpg" alt="web" title="webs" width="300" /> </a>
-
-        <!--Audio-->
-        <h4>Sound</h4>
-        <audio controls muted autoplay="false" preload="auto" loop="2">
-            <source src="Brazil.mp3" type="audio/mpeg">
-            <source src="Brazil.mp3" type="audio/ogg">
-            <source src="Brazil.wav" type="audio/wav">
-            your browser dosen't support this audio
-        </audio>
-
-        <!--Vidoe-->
-        <h5>video</h5>
-        <video controls width="400" poster="sebling.png" autoplay="true" preload="auto" loop="3">
-            <source src="ASL.mp4" type="video/mp4">
-
-        </video>
-        <p>Unorder List</p>
-    </font>
-
-    
-
-    <!-- Iframe -->
-     <h2>Video from YouTube</h2>
-     
-    <iframe   
-    width="500"
-    height="312"
-    src="https://www.youtube.com/embed/KGHMdtqrRTw?si=DE4oHagDBED6YUj3"
-    frameborder="0"
-    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope;"
-    allowfullscreen
-    >
-
-    </iframe>
-<h2>location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.3144795275707!2d44.017798899999995!3d13.5775886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161c6fbda8b1c6b9%3A0x1e49bfa3e4c86cc9!2z2YXYr9ix2LPZhyDYp9mE2LXYr9mK2YIg2LnYqNiv2KfZhiDYqti52LI!5e0!3m2!1sar!2s!4v1785344633249!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<h2>My CV</h2>
-    <iframe
-     src="CV_Musa_Sadiq_Ahmed.pdf"
-    width="500"
-    height="312"
-     frameborder="0"
-    >
-    </iframe>
-
-<ul>
-
-        <li><a href="#c++"><big>C++</big></a></li>
-
-        <li><a href="#python"><small>Python</small></a></li>
-
-        <li><a href="#java">JAVA</a></li>
-
-        <li><a href="#html">HTML</a><!--للانتقال الى جزى معين في الصفحة--></li>
-
-        <li><a href="Musa.html" target="_blank">who are we</a><!--للأنتقال الى موقع خرجي ولكن في نفس ملف المشروع-->
-        </li>
-        <li><a href="mailto:ghsap505@gmail.com">send us amail</a></li>
-         <li> <a href="signin.html">sign in</a></li>
-    </ul>
+    <footer>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">عن المطور</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+        </ul>
+    </footer>
 
 </body>
 
